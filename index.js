@@ -3,80 +3,75 @@
 
 
 
- let a = document.getElementById('start'), //a
+ let calculateButton = document.getElementById('start'), //a
+ 
+     incomeButton = document.getElementsByTagName('button')[0], //b
+     expensesButton = document.getElementsByTagName('button')[1], 
 
-     b = document.getElementsByTagName('button')[0], //b
-     b1 = document.getElementsByTagName('button')[1], 
+     depositButton = document.querySelector('#deposit-check'), // c
 
-     c = document.querySelector('#deposit-check'), // c
-
-     d = document.querySelectorAll('.additional_income'), //d
+     additionalIncome = document.querySelectorAll('.additional_income'), //d
 
 
-     e0 = document.querySelector('.result-budget_day'), //e
-     e1 = document.querySelector('.result-expenses_month'),
-     e2 = document.querySelector('.result-additional_income'),
-     e3 = document.querySelector('.result-additional_expenses'),
-     e4 = document.querySelector('.result-income_period'),
-     e5 = document.querySelector('.result-target_month'),
-     e6 = document.querySelector('.result-budget_day'),
-     e7 = document.querySelector('.result-budget_day'),
+     resultBudgetDay = document.querySelector('.result-budget_day'), //e
+     resultExpensesMonth = document.querySelector('.result-expenses_month'),
+     resultAdditionalIncome = document.querySelector('.result-additional_income'),
+     resultAdditionalExpenses = document.querySelector('.result-additional_expenses'),
+     resultIncomePeriod = document.querySelector('.result-income_period'),
+     resultTargetMonth = document.querySelector('.result-target_month'),
+    
+     main = document.querySelector('.main'), //f
+     incomeTitle = document.querySelectorAll('.income-title'),
+     salaryAmount = document.querySelector('.salary-amount'),
+     incomeAmount = document.querySelectorAll('.income-amount'),
+     additionalIncomeItems = document.querySelectorAll('.additional_income-item'),
+     expensesAmount = document.querySelector('.expenses-amount'),
+     additionalExpensesItem = document.querySelector('.additional_expenses-item'),
+     additionalExpensesTitle = document.querySelector('.additional_expenses-title title'),
+     targetAmount = document.querySelector('.target-amount'),
+     period = document.querySelectorAll('.period'),
+     resultTotalBudgetMonth = document.querySelector('.result-total budget_month-value'),
+     canselButton = document.getElementById('cancel'),
+     depositAmount = document.querySelector('.deposit-amount'),
+     depositPersent = document.querySelector('.deposit-percent');
 
-     f0 = document.querySelector('.main'),
-     f1 = document.querySelectorAll('.salary'),
-     f2 = document.querySelector('.salary-amount'),
-     f3 = document.querySelectorAll('.income');
-    //  f2 = document.querySelector('.'),
-    //  f3 = document.querySelector('.'),
-    //  f4 = document.querySelector('.'),
-    //  f5 = document.querySelector('.'),
-    //  f6 = document.querySelector('.'),
-    //  f7 = document.querySelector('.'),
-    //  f8 = document.querySelector('.'),
-    //  f9 = document.querySelector('.'),
-    //  f10 = document.querySelector('.'),
-    //  f11 = document.querySelector('.'),
-    //  f12 = document.querySelector('.');
-     console.log(f1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+     console.log(calculateButton);
+     console.log(incomeButton);
+     console.log(expensesButton);
+     console.log(depositButton);
+     console.log(additionalIncome);
+     console.log(resultBudgetDay);
+     console.log(resultExpensesMonth);
+     console.log(resultAdditionalIncome);
+     console.log(resultAdditionalExpenses);
+     console.log(resultIncomePeriod);
+     console.log(resultTargetMonth);
+     console.log(main);
+     console.log(incomeTitle);
+     console.log(salaryAmount);
+     console.log(incomeAmount);
+     console.log(additionalIncomeItems);
+     console.log(expensesAmount);
+     console.log(additionalExpensesItem);
+     console.log(additionalExpensesTitle);
+     console.log(targetAmount);
+     console.log(period);
+     console.log(resultTotalBudgetMonth);
+     console.log(canselButton);
+     console.log(depositAmount);
+     console.log(depositPersent);
+// в макете не нашел кнопки сбросить, процент и сумму. в упор не вижу их, надеюсь так и было задуманно
      
-     
-//  let z = console.log(a, b1, c, d, e0, e1, e2, e3, e4, e5, e6, e7);
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Задание по проекту, получить каждый элемент в отдельную переменную:
-
-
-
-// Кнопку "Рассчитать" через id
-
-// Кнопки “+” (плюс) через Tag, каждую в своей переменной. 
-
-// Чекбокс по id через querySelector
-
-// Поля для ввода возможных доходов (additional_income-item) при помощи querySelectorAll
-
-// // Каждый элемент в правой части программы через класс, 
-// которые имеют в имени класса "-value", 
-// начиная с class="budget_day-value" и заканчивая class="target_month-value">
-
-
-// Оставшиеся поля через querySelector каждый в отдельную переменную:
-
-// поля ввода (input) с левой стороны и не забудьте про range.
-
