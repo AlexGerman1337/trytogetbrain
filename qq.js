@@ -74,6 +74,7 @@ const appData = {
             }
             while (!isNumber(sum));
             console.log(appData.expenses);
+            appData.expenses[str] = sum;
      }
     
  },
