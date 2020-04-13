@@ -62,10 +62,10 @@ const appData = {
       console.log(uppercase(appData.addExpenses));
 
       let sum;
-      let str;
+      let str = [];
           for (let i = 0; i < 2; i++){
             do{
-            str[] = prompt('Введите обязательную статью расходов', ' вода из под крана');
+            str = prompt('Введите обязательную статью расходов', ' вода из под крана');
            // str[i] = str.replace(/^\s*/,'').replace(/\s*$/,'');
             }
             while(isString(str) || str === '');
