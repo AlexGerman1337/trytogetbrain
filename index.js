@@ -21,16 +21,17 @@
      resultTargetMonth = document.querySelector('.result-target_month'),
     
      main = document.querySelector('.main'), //f
-     incomeTitle = document.querySelectorAll('.income-title'),
+     incomeTitle = document.querySelector('.income-title'),
      salaryAmount = document.querySelector('.salary-amount'),
-     incomeAmount = document.querySelectorAll('.income-amount'),
-     additionalIncomeItems = document.querySelectorAll('.additional_income-item'),
+     incomeAmount = document.querySelector('.income-amount'),
      expensesAmount = document.querySelector('.expenses-amount'),
      additionalExpensesItem = document.querySelector('.additional_expenses-item'),
-     additionalExpensesTitle = document.querySelector('.additional_expenses-title title'),
+     additionalExpensesTitle = document.querySelector('.additional_expenses-title'),
      targetAmount = document.querySelector('.target-amount'),
-     period = document.querySelectorAll('.period'),
-     resultTotalBudgetMonth = document.querySelector('.result-total budget_month-value'),
+     period = document.querySelector('.period-select'),
+     periodTitle = document.querySelector('.period-title'),
+     periodAmount = document.querySelector('.period-amount'),
+     resultTotalBudgetMonth = document.querySelector('.budget_month-value'),
      canselButton = document.getElementById('cancel'),
      depositAmount = document.querySelector('.deposit-amount'),
      depositPersent = document.querySelector('.deposit-percent');
@@ -63,7 +64,6 @@
      console.log(incomeTitle);
      console.log(salaryAmount);
      console.log(incomeAmount);
-     console.log(additionalIncomeItems);
      console.log(expensesAmount);
      console.log(additionalExpensesItem);
      console.log(additionalExpensesTitle);
@@ -73,5 +73,6 @@
      console.log(canselButton);
      console.log(depositAmount);
      console.log(depositPersent);
+     console.log(periodTitle);
+     console.log(periodAmount);
 // в макете не нашел кнопки сбросить, процент и сумму. в упор не вижу их, надеюсь так и было задуманно
-     
