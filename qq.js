@@ -192,12 +192,7 @@ const appData = {
     getTargetMonth: function(){
         let a = +Math.floor(targetAmount.value / appData.budgetMonth);
         
-        if(isNumber(a)){
-            resultTargetMonth.textContent = 'Срок';
-        }else{
-            return a;
-        }
-  
+
         // не понимаю почему этот костыль не работает
     },
 
@@ -247,7 +242,7 @@ const appData = {
 
 start.addEventListener('click', function(){
     if(salaryAmount.value === ''){
-    event.preventDefault(start);
+        event.stopImmediatePropagation();
     
 }
 });
@@ -261,7 +256,7 @@ expensesPlus.addEventListener('click',appData.addExpensesBlock);
 incomePlus.addEventListener('click',appData.addIncomeBlock);
 document.querySelector('.period-select').addEventListener('change', appData.setPeriod);
 
-// /start();
+
 
 // appData.getTargetMonth();
 // appData.getStatusIncome();
